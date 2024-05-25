@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+ <home >
+    <div class="content d-flex flex-column align-items-center justify-content-center  py-3 px-5 ">
+      <h1 class="py-2 position-relative  text-center  ">
+        Bookmarker
+      </h1>
+      <div class="d-flex justify-content-center flex-column w-100   px-5  border-bottom border-top p-5">
+        <!-- <form class="d-flex justify-content-center flex-column w-100   px-5 border-bottom border-top p-5 " > -->
+            <div class="Text ">
+              <h2 class="text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                Disabled fieldset example
+                <i class="fa-solid fa-bookmark"></i>
+                <h2>
+             </div> 
+                
+              <div class="mb-3">
+               
+                <label for="disabledTextInput" class="form-label fw-bold"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder=" Site Name input">
+              </div>
+              <div class="mb-3">
+                <label for="exampleForm" class="form-label fw-bold"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+                <input type="email" class="form-control" id="exampleForm" placeholder="name@example.com">
+              </div> 
+              
+              <div class="d-grid gap-1 col-1 mx-auto">
+                <button onclick="AddSubmit()" type="button" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#arr" id="Danger">Submit</button>
+           
+              </div>
+              
+              
+            
+           
+          <!-- </form> -->
+        </div>
+          <table class="table mt-4 text-center bg-light">
+            <thead>
+              <tr><th class="text-capitalize">index</th>
+              <th class="text-capitalize">Website Name</th>
+              <th class="text-capitalize">Visit</th>
+              <th class="text-capitalize">Delete</th>
+            </tr></thead>
+            <tbody id="tableContent"></tbody>
+          </table>
+   
+
+    </div>
+ </home>
+ <div class="modal" tabindex="-1" id="arr">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+          <div class="circles d-flex">
+            <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+          </div>
+          <button class="btn border-0" id="closeBtn">
+            <i class="fa-solid fa-xmark close fs-3"></i>
+          </button>
+        </header>
+        
+    
+      </div>
+      <div class="modal-body">
+        <p class="m-0 pb-2 fw-bold fs-5">
+          Site Name or Url is not valid, Please follow the rules below :
+        </p>
+        <ol class="rules list-unstyled m-0">
+          <li>
+            <i class="fa-regular fa-circle-right p-2"></i>Site name must
+            contain at least 3 characters
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+            valid one
+          </li>
+        </ol>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
